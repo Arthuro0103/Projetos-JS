@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta cherset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content=", initial-scale=1.0">
+        <title>Lista de Afazeres</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/dcdd855077.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js" defer></script>
+    </head>
+    <body>
+        
+        <div class="todo-container">
+        <header>
+            <h1>Lista de Afazeres</h1>
+            <h4>Nomeie sua Tarefa, Descreva ela, clique em enviar, se não quiser descreve-la, após nomear, clique em +</h4>
+        </header>
+        <form id="todo-form">
+            <p>Adicione sua Tarefa</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder='Exemplo: "Estudar"'>
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+            
+            
+            <div>
+                <p id="describe-text">Descreva sua Tarefa</p>
+                <input type="text" id="describe-todo" placeholder='Exemplo "Estudar JavaScript"'>
+                <button type="submit"  id="describe-btn">
+                    Enviar
+                </button>
+            </div> 
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite sua Tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                
+                <div>
+                <p>Edite sua Descrição</p>
+                <input type="text" id="edit-describe-input">
+            </div>
+            <button id="edit-btn" type="submit">
+                <i class="fa-solid fa-check-double"></i>
+               </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+           
+           
+        </form>
+        <div id="todo-list">
+            </div>
+            </div>
+            
+    </body>
+</html>

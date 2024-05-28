@@ -1,0 +1,121 @@
+/* geral*/
+*{
+ padding: 0;
+ margin: 0;
+ font-family: Helvetica;
+ color: #333;
+ box-sizing: border-box;
+}
+
+body{
+background-color: #2959a0;
+ background-position: center; 
+ background-size: cover; 
+}
+button{
+    background-color:#FDFDFD;
+    color: #102F5e;
+    border: #102F5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+button:hover {
+    background-color: #102F5e;
+    color: #fff;
+}
+button:hover > i {
+    color: #fff
+}
+button i {
+    color: #102F5e;
+     font-weight: bold; 
+     pointer-events: none;
+}
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+.hide {
+display: none;
+}
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-control {
+    display: flex;
+}
+.form-control input {
+    margin-right: 0.3rem;
+}
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s
+}
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button {
+    margin-left: 0.4rem;
+    transform: scale(1.1);
+}
+.done {
+    background-color: #395169;
+}
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+#describe-todo {
+    border-color: #ccc;
+    width: 20rem;
+    background-color: #ffffff;
+    display: flex;
+    color: #333;
+    overflow-wrap: break-word;
+}
+#describe-text {
+    margin-top: 1rem;
+    color: #333;
+}
+#describe-btn {
+     border: 1rem;
+  
+}
+h5 {
+    display: flex;
+    padding: 2%;
+    padding-left: 1rem;
+   border-radius: 2%;
+   font-family: fantasy;
+}
