@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    border-radius: 1%;
+}
+body {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+#calc h3 {
+    font-size: .8em;
+    font-weight: #666;   
+}
+#calc h6 {
+    color: #dadada;
+}
+#operations {
+    text-align: right;
+
+}
+#current-operation ,#previous-operation {
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+#previous-operation{
+    color: #777;
+    background-color: rgb(209, 209, 209);
+}
+#current-operation {
+    font-size: 3em;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    
+}
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 5%;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+#buttons-container .number {
+    background-color: #f3f3f3;
+
+}
+#buttons-container button:hover {
+    background-color: #BABABA;
+    border-color: #999;
+    transition: 0.2s;
+    transform: scale(0.96);
+}
+#buttons-container #equal-btn {
+    grid-column: span 2;
+    background-color: #6db5f0;
+    border-color: #2679bd;
+}
+#buttons-container #equal-btn:hover {
+    background-color: #2679bd;
+    border-color: #0c00b8;
+    transition: 0.2s;
+}
+#buttons-container .special-dg {
+    background-color: #969696;
+}
+#buttons-container .special-dg:hover {
+    background-color: #4d4d4d;
+    border-color: #000;
+}
