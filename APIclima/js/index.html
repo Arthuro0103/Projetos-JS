@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body class="center">
+    <div class="container">
+        <div class="form">
+            <h3>Confira o Clima de uma Cidade:</h3>
+            <div class="form-input-container">
+                 <input type="text" placeholder="Nome da Cidade" id="city-input">
+                 <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                 </button>
+            </div>
+        </div>
+        <div id="weather-data" class="hide">
+            <h2 id="country" class="center">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="Bandeiras do País" id="country"/>
+            </h2>
+            <p id="temperature-min">Miníma:<span></span>&deg;C</p>
+            <p id="temperature">Atual:<span></span>&deg;C</p>
+            <p id="temperature-max">Maxíma:<span></span>&deg;C</p>
+            <p id="feels-like">Sensação Térmica:<span></span>&deg;C</p>
+            <div id="description-container" class="center">
+                <p id="description"></p>
+                <img src="" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <div id="details-container" class="center">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+            <button id="back-btn">Voltar</button>
+        </div>
+        <div id="buttons-container">
+            <p id="par">Exemplos:</p>
+            <hr>
+            <button class="button">Chapecó</button>
+            <button class="button">São Paulo</button>
+            <button class="button">Rio de Janeiro</button>
+            <hr>
+            <button class="button">Nova York</button>
+            <button class="button">Miami</button>
+            <button class="button">Washington</button>
+            <hr>
+            <button class="button">Cinco Saltos</button>
+            <button class="button">Buenos Aires</button>
+            <button class="button">Bariloche</button>
+        </div>
+    </div>
+</body>
+</html>
