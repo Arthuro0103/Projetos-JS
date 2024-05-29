@@ -44,6 +44,7 @@ main section {
     margin: 2rem auto;
     padding: 1rem;
     max-width: 80rem;
+    border-radius: 5px;
 }
 
 main section span {
@@ -74,19 +75,15 @@ footer {
     display: none;
 }
 h3 {
-   align-items: center;
-   justify-content: center;
-    display: flex; 
+   
    font-family: "Playfair";
 }
 #moeda {
-  margin-left: 76vh;
   background-color: #e2e2e2;
   border: none;
   border-radius: 6px;
   height: 30px;
-  width: 180px;
-  margin-bottom: 2.5rem;
+  margin-bottom: rem;
 }
 #enviar {
   border: none;
@@ -95,9 +92,16 @@ h3 {
   border-radius: 8px;
   color: #FFF;
   background-color: #333333;
+  margin-bottom: 2.5rem;
 }
 #enviar:hover {
     transform: scale(0.96);
     background-color: #535353;
     transition: 0.5s;
+}
+#choose {
+    align-items: center;
+    justify-content: center;
+     display: flex; 
+     flex-direction: column;
 }
