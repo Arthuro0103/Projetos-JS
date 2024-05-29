@@ -73,12 +73,31 @@ footer {
 .hide {
     display: none;
 }
-h5 {
+h3 {
    align-items: center;
    justify-content: center;
-   display: flex;
+    display: flex; 
+   font-family: "Playfair";
 }
 #moeda {
-    margin-top: 10px;
-  margin-left: 500px;
+  margin-left: 76vh;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  width: 180px;
+  margin-bottom: 2.5rem;
+}
+#enviar {
+  border: none;
+  height: 30px;
+  width: 50px;
+  border-radius: 8px;
+  color: #FFF;
+  background-color: #333333;
+}
+#enviar:hover {
+    transform: scale(0.96);
+    background-color: #535353;
+    transition: 0.5s;
 }
